@@ -2,7 +2,12 @@
 
 ## purpose
 i was bored and fed up with task manager not showing me the info i needed, so i decided to play around with the windows registry to replace it by SystemInformer (also known as ProcessHacker) whenever i use `win+r` `taskmgr` or `ctrl-alt-suppr` shortcuts.  
-doing it in a few clicks was too easy so i went the less easy way and played with some really interesting (documented 🙏) win32 functions.  
+doing it in a few clicks was too easy so i went the funnier way and played with some really interesting (documented 🙏) win32 functions.  
+
+## how to run 
+
+`gcc main.c create_dword_value.c -o main.exe && .\main.exe` then let it do the magic  
+in case of testing, you might want to backup your registry, even though rolling back is as easy as removing the created `taskmgr.exe` subkey  
 
 ## what it does 
 
@@ -20,7 +25,7 @@ not much i guess, mostly fueled by boredom and i like learning new stuff whether
 
 - `main.c`: core logic explained above 
 - `create_dword_value.c`: contains helper functions
-- `create_dword_value`.h`: function declarations
+- `create_dword_value.h`: function declarations
 
 [RegOpenKeyEx](https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regopenkeyexa)  
 [RegEnumKeyEx](https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regenumkeyexa)  
