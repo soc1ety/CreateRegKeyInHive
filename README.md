@@ -1,7 +1,7 @@
 # readme.md (or don't) 
 
 ## purpose
-i was bored and fed up with task manager not showing me the info i needed, so i decided to play around with the windows registry to replace it by SystemInformer (also known as ProcessHacker) whenever i use `win+r` `taskmgr` or `ctrl-alt-suppr` shortcuts.  
+i was bored and fed up with task manager not showing me the info i needed, so i decided to play around with the windows registry to replace it by SystemInformer (also known as ProcessHacker) whenever i use `win+r` `taskmgr` or `ctrl-alt-del` shortcuts.  
 doing it in a few clicks was too easy so i went the funnier way and played with some really interesting (documented 🙏) win32 functions.  
 
 ## how to run 
